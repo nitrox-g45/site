@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="traitement.php">
+        <label for="nom">Votre nom</label>
+        <input type="texte" id="nom"name="nom"placeholder="Entrez votre nom"required>
+        <br/>
+        <label for="prenom">Votre prenom</label>
+        <input type="texte"id="prenom" name="prenom"placeholder="Entrez votre prenom"required>
+        <br/>
+        <label for="email">Votre adresse mail</label>
+        <input type="texte" id="email"name="email"placeholder="Entrez votre adress mail"required>
+        <br/>
+        <label for="pass">Votre mot de passe</label>
+        <input type="password" id="pass" name="pass"placeholder="Entrez votre mot de passe" required>
+        <br/>
+<label for="pass_confirm">Confirmez votre mot de passe</label>
+            <input type="password" name="pass_confirm"required="" class="textarea" id="pass_confirm">
+</br>
+         <button type="submit">Envoyer</button>
+    </form>
+<script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+        const pass = document.getElementById("pass").value;
+        const confirmPass = document.getElementById("confirm_pass").value;
+
+        if (pass !== confirmPass) {
+            e.preventDefault(); // Empêche l'envoi du formulaire
+            alert("Les mots de passe ne correspondent pas. Veuillez réessayer.");
+        }
+    });
+</script>
+</body>
+</html>

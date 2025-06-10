@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnknownManga</title>
+    <link rel="icon" type="image/site-1.icon" href="/site-1.icon">
+    <link rel="stylesheet" href="/../css/styles.css">
+   
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="logo">UnknownManga</div>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                <li><a href="Définition.html">Définition des mots</a></li>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="Manga.html">Manga</a></li>
+                    <li><a href="Anime.html">Anime</a></li>
+                    <li><a href="Webtoon.html">Webtoon</a></li>
+                    <body>
+                        <input type="search" id="search" class="barre" placeholder="Recherche" onchange="ouvrirPage()">
+                        <input type="button" id="button" onclick="ouvrirPage()" value="Chercher" class="bouton">
+                        <style>
+
+                        </style>
+                        <script>
+                            function ouvrirPage() {
+                                var a = document.getElementById("search").value; 
+                                
+                                if(a === "chat") { 
+                                    window.open("/1.html", "_self"); 
+                                } else {
+                                    alert("Aucune page trouvée pour: " + a);
+                                }
+                            }
+                        </script>
+                    </body>
+                </ul>
+            </nav>
+        </div>
+    </header>

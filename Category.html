@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnknownManga</title>
+    <link rel="icon" type="image/site-1.icon" href="/site-1.icon">
+    <link rel="stylesheet" href="/../css/styles.css">
+   
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="logo">UnknownManga</div>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                <li><a href="Définition.html">Définition des mots</a></li>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="Manga.html">Manga</a></li>
+                    <li><a href="Anime.html">Anime</a></li>
+                    <li><a href="Webtoon.html">Webtoon</a></li>
+                    <body>
+                        <input type="search" id="search" class="barre" placeholder="Recherche" onchange="ouvrirPage()">
+                        <input type="button" id="button" onclick="ouvrirPage()" value="Chercher" class="bouton">
+                        <style>
+
+                        </style>
+                        <script>
+                            function ouvrirPage() {
+                                var a = document.getElementById("search").value; 
+                                
+                                if(a === "chat") { 
+                                    window.open("/1.html", "_self"); 
+                                } else {
+                                    alert("Aucune page trouvée pour: " + a);
+                                }
+                            }
+                        </script>
+                    </body>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav>
+    <ul>
+    <div class="menu-déroulant">
+        <button class="dropbtn" onclick="toggleMenu('menu1')">Romance</button>
+        <ul class="sous-menu" id="menu1">
+            <li><a href="/catégories/Drame.html">Drame</a></li>
+        <li><a href="/catégories/Comédie.html">Comédie</a></li>
+        <li><a href="/catégories/Fantastique.html">Fantastique</a></li>
+		<li><a href="/catégories/Public.html">Public averti</a></li>
+		<li><a href="/catégories/-18.html">- 18 ans</a></li>
+		<li><a href="/catégories/School.html">School</a></li>
+        </ul>
+    </div>
+    <div class="menu-déroulant">
+        <button class="dropbtn" onclick="toggleMenu('menu2')">Horreur</button>
+        <ul class="sous-menu" id="menu2">
+        <li><a href="/catégories/Comédie.html">Comédie</a></li>
+        <li><a href="/catégories/Fantastique.html">Fantastique</a></li>
+        </ul>
+    </div>
+   <div class="menu-déroulant">
+        <button class="dropbtn" onclick="toggleMenu('menu3')">Shonen</button>
+        <ul class="sous-menu" id="menu3">
+            <li><a href="/catégories/Action.html">Action</a></li>
+        <li><a href="/catégories/Aventure.html">Aventure</a></li>
+        <li><a href="/catégories/Nikketsu.html">Nikketsu</a></li>
+		<li><a href="/catégories/Isekai.html">Isekai</a></li>
+		<li><a href="/catégories/Comédie.html">Comédie</a></li>
+		<li><a href="/catégories/Sportif.html">Sportif</a></li>
+		<li><a href="/catégories/Science fiction.html">Science fiction</a></li>
+
+        </ul>
+		</div>
+   <div class="menu-déroulant">
+        <button class="dropbtn" onclick="toggleMenu('menu4')">Action</button>
+        <ul class="sous-menu" id="menu4">
+        <li><a href="/catégories/Combat.html">Combat</a></li>
+        <li><a href="/catégories/Aventure.html">Aventure</a></li>
+        <li><a href="/catégories/Pouvoir.html">Pouvoir</a></li>
+              
+        </ul>
+    </div>
+    <div class="menu-déroulant">
+        <button class="dropbtn" onclick="toggleMenu('menu5')">Isekai</button>
+        <ul class="sous-menu" id="menu5">
+            <li><a href="/catégories/Classique.html">Classique</a></li>
+        <li><a href="/catégories/Inversé.html">Inversé</a></li>
+        <li><a href="/catégories/Survie.html">Survie</a></li>
+		 <li><a href="/catégories/Comique.html">Comique</a></li>
+		 <li><a href="/catégories/Sombre">Sombre /horreur</a></li>
+        </ul>
+    </div>
+
+<div class="menu-déroulant">
+        <button class="dropbtn" onclick="toggleMenu('menu6')">Drame</button>
+        <ul class="sous-menu" id="menu6">
+            <li><a href="/catégories/Tragedie.html">Tragédie</a></li>
+        <li><a href="/catégories/Harcelement.html">Harcélement</a></li>
+                </ul>
+    </div>
+
+<div class="menu-déroulant">
+        <button class="dropbtn" onclick="toggleMenu('menu7')">Fantaisie</button>
+        <ul class="sous-menu" id="menu7">
+            <li><a href="/catégories/Dark.html"></li>
+        <li><a href="/catégories/Low.html">Low</a></li>
+		<li><a href="/catégories/Heroique.html">Héroique</a></li>
+		<li><a href="/catégories/Festival">Festival</a></li>
+		 </ul>
+    </div>
+<div class="menu-déroulant">
+    <a href="/catégories/Surnaturel.html" type="button" class="dropbtn" onclick="toggleMenu('menu10')">Surnaturel </a>       
+    
+    </ul>
+</div>
+
+    <style>
+        .menu-déroulant { position: relative; display:block; margin-bottom: 20px; margin: 1rem;}
+        .dropbtn { background: none; color: #3498db; font-size: 18px; border: none; cursor: pointer; text-decoration: underline;  }
+        .sous-menu { display: none; position: relative; padding: 0;margin: 0; list-style-type: none; width: auto; border: 1px; }
+        .sous-menu li { padding: 5px 0; }
+        .sous-menu li a { color: black; text-decoration: none; display: inline; }
+        .sous-menu li a:hover { background-color: transparent; text-decoration: underline;color: purple; }
+        .show { display: block; }
+    </style>
+    <script>
+        function toggleMenu(menuId) {
+            var dropdowns = document.getElementsByClassName("sous-menu");
+            var currentMenu = document.getElementById(menuId);
+        var isOpen = currentMenu.classList.contains('show');
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].classList.remove('show');
+            }
+            if (!isOpen) {
+            currentMenu.classList.add("show");
+        }
+        }
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("sous-menu");
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].classList.remove('show');
+            }
+        }
+    }
+    </script>
+    </nav>  
+</body>
