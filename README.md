@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>UnknownManga</title>
     <link rel="icon" type="image/site-1.icon" href="/site-1.icon" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <style>
         /* Bouton d'ouverture */
         .open-btn {
